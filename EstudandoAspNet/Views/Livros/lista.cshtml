@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <ul>
+        <!--O 'Arroba' significa que é um codigo c# dentro do html para que o 'razor' execute codigo c# dentro do html -->
+        <!-- ViewBag.Livros: recebe as informações da lista vindos do CSharp-->
+        @foreach (var livro in ViewBag.Livros)
+        {
+            <li>@livro.Titulo - @livro.Autor</li>
+        }
+    </ul>
+</body>
+</html>
